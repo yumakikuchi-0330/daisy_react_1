@@ -41,21 +41,21 @@ function App() {
     },
       {id: 7 ,
       name: "ニコ・ロビン",
-      job: "キャプテン" ,
-      email: "lufffy@mugiwara.com",
+      job: "学者" ,
+      email: "robin@mugiwara.com",
       src: "/nico.jpg"
     },
   ];
-
   return (
     <div className="App">
       <h2>Employee</h2>
-      <div>
+      <div className="card-list">
         {mockMember.map((data)=> (
           <EmployeeCard key={data.id} name={data.name} job={data.job} email={data.email} src={data.src} />
         ))}
       </div>
     </div>
-)};
+  )
+};
 
 export default App;
